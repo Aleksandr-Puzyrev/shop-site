@@ -7,12 +7,6 @@ export default function AboutLayout({
 }>) {
   return (
     <>
-      <nav>
-        <ul>
-          <li>Телефон</li>
-          <li>Эмаил</li>
-        </ul>
-      </nav>
       {children}
     </>
   );

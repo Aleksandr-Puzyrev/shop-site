@@ -1,0 +1,16 @@
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuItem {
+    margin: 10px;
+    padding: 5px;
+    list-style-type: none;
+}
+
+.menuLink:hover {
+    font-weight: bold;
+}

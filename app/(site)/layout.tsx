@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Menu from "@/app/components/Menu/Menu";
+import Header from "../components/Header/Header";
+import Sidebar from "../components/Sidebar/Sidebar";
+import Footer from "../components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,16 +20,11 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={inter.className}>
-        <Menu />
-        {/* <nav>
-          <ul>
-            <li>О нас</li>
-            <li>Категории</li>
-            <li>Товары</li>
-          </ul>
-        </nav> */}
+        <Header />
+        <Sidebar />
         {children}
-      </body>
+        <Footer />
+        </body>
     </html>
   );
 }
